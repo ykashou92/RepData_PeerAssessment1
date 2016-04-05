@@ -1,5 +1,5 @@
 # Reproducible Research: Peer Assessment 1
-### *by Yanal Kashou*
+### *Author: Yanal Kashou*
 
 ## Prepare R
 ```{r setup, include=FALSE}
