@@ -6,6 +6,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Loading and preprocessing the data
+
 ```{r Loading and preprocessing the data}
 # Download and unzip dataset
 url <- "https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip"
@@ -15,6 +16,9 @@ download.file(url, f)
 if(!file.exists("activity.csv")) {
         unzip(f)
 }
+
+# Load libraries
+library(ggplot2)
 
 # Import dataset
 import <- read.csv("activity.csv", header = TRUE, sep = ",")
@@ -31,7 +35,6 @@ str(import) 	# Reveals dataset is 3 Columns and 17568 Rows
 # Calculate the steps taken each day
 steps_each_day <- tapply(import$steps, as.factor(import$date),sum)
 
-library(ggplot2)
 # Plot a histogram showing the steps taken each day
 qplot(steps_each_day,
 	geom = "histogram",
