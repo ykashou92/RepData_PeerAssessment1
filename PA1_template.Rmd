@@ -1,10 +1,11 @@
 # Reproducible Research: Peer Assessment 1
-
+### *Yanal Kashou*
+***
 ## Prepare R
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
+***
 ## Loading and preprocessing the data
 
 ```{r Loading and preprocessing the data}
@@ -27,7 +28,7 @@ import <- read.csv("activity.csv", header = TRUE, sep = ",")
 head(import) 	# Reveals dataset is in the form (steps, date, interval)
 str(import) 	# Reveals dataset is 3 Columns and 17568 Rows
 ```
-
+***
 ## What is mean total number of steps taken per day?
 
 ```{r Total Steps}
@@ -51,7 +52,7 @@ mean(steps_each_day, na.rm = TRUE)
 median(steps_each_day, na.rm = TRUE)
 ```
 **The mean number of steps taken each day is 10766.19 compared to the median which is 10765.**  
-
+***
 ## What is the average daily activity pattern?
 
 ```{r Time Series}
@@ -75,7 +76,7 @@ interval.max.steps
 ```
 **The maximum number of steps is 206 and occurs at interval 834.**  
 
-
+***
 ## Imputing missing values
 
 ```{r Total Steps after imputing NAs}
@@ -127,7 +128,7 @@ qplot(imputed.steps_each_day,
 
 
 **After imputing the NAs from the dataset 'import' and using the modified dataset 'import_imputed', we find that the values do differ, and in fact there is a significant rise in the peak values of the histogram, however it does not have an effect on the shape of the histogram.**  
-
+***
 ## Are there differences in activity patterns between weekdays and weekends?
 
 ```{r Weekdays vs Weekends}
@@ -157,3 +158,4 @@ t2plot
 ```
 
 **We can safely deduce that on weekends people tend to be active at later hours. And there is also a decrease from the number of people active in the morning.**
+***
