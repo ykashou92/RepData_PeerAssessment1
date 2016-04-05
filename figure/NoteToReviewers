@@ -1,0 +1,3 @@
+When knitting the .Rmd file, an HTML file and an .md file were produced.
+
+Now by default my pc has set the directory of the figures to be 'RepData_PeerAssessement1/PA1_template_files/figures-html/*'
