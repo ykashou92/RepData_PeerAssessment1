@@ -1,6 +1,6 @@
 # Reproducible Research: Peer Assessment 1
-### *Yanal Kashou*
-***
+### *by Yanal Kashou*
+
 ## Prepare R
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
