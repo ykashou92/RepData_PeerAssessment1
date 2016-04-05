@@ -1,0 +1,11 @@
+When knitting the .Rmd file, an .html file and an .md file were produced.
+
+Now by default my pc has set the directory of the figures to be:
+'RepData_PeerAssessment1/PA1_template_files/figures-html/*'
+
+However the upload of the figures to the repo will be under both these directories:
+Link1: 'RepData_PeerAssessment1/PA1_template_files/figures-html/*'
+Link2: 'RepData_PeerAssessment1/figure/*'
+
+The result is that the graphs in the .md file are displayed only because of Link1 and not Link2.
+The sole reason that I uploaded the files again to Link2 is to make the reviewing processing less complicated.
